@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-<url>
-  <loc>https://deepsnexttoskin.netlify.app/</loc>
-  <lastmod>2025-04-17T05:53:05+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://deepsnexttoskin.netlify.app/</loc>
+      <lastmod>2025-04-17</lastmod> <!- Use today's date or the last time you updated your page -->
+      <changefreq>daily</changefreq> <!- Adjust as needed -->
+      <priority>1.0</priority>
+   </url>
 </urlset>
