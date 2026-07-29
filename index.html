@@ -84,7 +84,6 @@
                 <video autoplay muted loop playsinline class="w-full h-full object-cover">
                     <source src="front.mp4" type="video/mp4"/>
                 </video>
-                <!-- Removed backdrop-blur and changed to bg-black/50 for a clear video with readable text -->
                 <div class="absolute inset-0 bg-black/50 z-10"></div>
             </div>
 
@@ -125,64 +124,35 @@
                 <p class="text-lg text-zinc-400 max-w-2xl mx-auto">Meticulously crafted lines designed to elevate your retail offerings <br> We combine traditional craftsmanship with modern comfort standards.</p>
             </div>
 
-            <!-- Changed grid layout to center items and added flex/justify-center to image containers -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 md:gap-16 justify-items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 justify-items-center">
                 
-                <!-- Item 1: T-Shirt Bra -->
-                <!-- Added onclick handler to navigate to 'partner with us' -->
-                <div class="group cursor-pointer w-full max-w-md flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
-                    <div class="w-full aspect-[3/4] bg-zinc-900 border border-zinc-800 rounded-3xl mb-8 overflow-hidden relative shadow-2xl flex items-center justify-center">
-                        <img src="tshirt.jpg" alt="The Essential Core" class="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 bg-white">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent pointer-events-none"></div>
-                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-sm border border-zinc-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest text-teal-400 whitespace-nowrap">Bulk tiers available</div>
+                <!-- Video Item 1 -->
+                <div class="group cursor-pointer w-full max-w-lg flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
+                    <div class="w-full aspect-[4/5] bg-black border border-zinc-800 rounded-3xl mb-8 overflow-hidden relative shadow-2xl flex items-center justify-center">
+                        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain">
+                            <source src="bra.mp4" type="video/mp4"/>
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none"></div>
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-sm border border-zinc-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest text-teal-400 whitespace-nowrap">High-Margin Line</div>
                     </div>
-                    <h3 class="text-3xl font-semibold text-white mb-3">The Essential Core</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">Everyday comfort redefined with premium cotton blends.</p>
+                    <h3 class="text-3xl font-semibold text-white mb-3">Premium brassiere (bra) </h3>
+                    <p class="text-zinc-400 leading-relaxed mb-6">Experience ultimate comfort with our seamlessly crafted bra.</p>
                     <div class="flex items-center text-sm font-semibold text-teal-500 group-hover:text-teal-300 transition-colors tracking-wide uppercase">
                         View Catalog <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
                     </div>
                 </div>
 
-                <!-- Item 2: Siya Pad -->
-                <!-- Added onclick handler to navigate to 'partner with us' -->
-                <div class="group cursor-pointer w-full max-w-md flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
-                    <div class="w-full aspect-[3/4] bg-zinc-900 border border-zinc-800 rounded-3xl mb-8 overflow-hidden relative shadow-2xl flex items-center justify-center">
-                        <img src="siyapad.jpg" alt="Seamless Elegance" class="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 bg-white">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent pointer-events-none"></div>
-                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-sm border border-zinc-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest text-teal-400 whitespace-nowrap">High-margin line</div>
+                <!-- Video Item 2 -->
+                <div class="group cursor-pointer w-full max-w-lg flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
+                    <div class="w-full aspect-[4/5] bg-black border border-zinc-800 rounded-3xl mb-8 overflow-hidden relative shadow-2xl flex items-center justify-center">
+                        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain">
+                            <source src="panty.mp4" type="video/mp4"/>
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-transparent to-transparent pointer-events-none"></div>
+                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-sm border border-zinc-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest text-teal-400 whitespace-nowrap">Best-Sellers</div>
                     </div>
-                    <h3 class="text-3xl font-semibold text-white mb-3">Seamless Elegance</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">Invisible support engineered with modern knitting technology.</p>
-                    <div class="flex items-center text-sm font-semibold text-teal-500 group-hover:text-teal-300 transition-colors tracking-wide uppercase">
-                        View Catalog <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </div>
-                </div>
-
-                <!-- Item 3: T-S Pad -->
-                <!-- Added onclick handler to navigate to 'partner with us' -->
-                <div class="group cursor-pointer w-full max-w-md flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
-                    <div class="w-full aspect-[3/4] bg-zinc-900 border border-zinc-800 rounded-3xl mb-8 overflow-hidden relative shadow-2xl flex items-center justify-center">
-                        <img src="tspad.jpg" alt="Tshirt paded bra" class="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 bg-white">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent pointer-events-none"></div>
-                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-sm border border-zinc-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest text-teal-400 whitespace-nowrap">Consistent best-seller</div>
-                    </div>
-                    <h3 class="text-3xl font-semibold text-white mb-3">Seamless Padded</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">Our bestseller perfected over an decade.</p>
-                    <div class="flex items-center text-sm font-semibold text-teal-500 group-hover:text-teal-300 transition-colors tracking-wide uppercase">
-                        View Catalog <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                    </div>
-                </div>
-
-                <!-- Item 4: Damini -->
-                <!-- Added onclick handler to navigate to 'partner with us' -->
-                <div class="group cursor-pointer w-full max-w-md flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
-                    <div class="w-full aspect-[3/4] bg-zinc-900 border border-zinc-800 rounded-3xl mb-8 overflow-hidden relative shadow-2xl flex items-center justify-center">
-                        <img src="damini.jpg" alt="Active Support" class="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 bg-white">
-                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-transparent to-transparent pointer-events-none"></div>
-                        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/80 backdrop-blur-sm border border-zinc-700 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest text-teal-400 whitespace-nowrap">New addition</div>
-                    </div>
-                    <h3 class="text-3xl font-semibold text-white mb-3">Elegance Timeless</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">Breathable textile cotton, full coverage for the all the generations.</p>
+                    <h3 class="text-3xl font-semibold text-white mb-3">Signature panties</h3>
+                    <p class="text-zinc-400 leading-relaxed mb-6">Perfect fit and support engineered for all-day confidence.</p>
                     <div class="flex items-center text-sm font-semibold text-teal-500 group-hover:text-teal-300 transition-colors tracking-wide uppercase">
                         View Catalog <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
                     </div>
@@ -197,18 +167,16 @@
                 <div>
                     <span class="text-sm font-semibold text-teal-500 tracking-widest mb-4 uppercase block">Our Heritage</span>
                     <h2 class="text-4xl md:text-5xl font-bold text-white tracking-tight mb-8 leading-tight">
-                        Deconstructed<br/>Inspected<br/><span class="text-teal-500">Perfected</span>
+                        Deconstruct kiya<br/>Inspect kiya<br/><span class="text-teal-500">Perfect banaya</span>
                     </h2>
                     
                     <div class="space-y-6 text-lg text-zinc-400 leading-relaxed">
                         <p>
-                            Founded in <strong class="text-white font-medium">Bhopal, MP in 1993</strong>, Deepa Hosiery began with a singular vision: to bring uncompromising quality to the wholesale lingerie market. 
+                            1993 mein <strong class="text-white font-medium">Bhopal, MP mein </strong><br>Deepa Hosiery ki shuruat ek hi vision ke sath hui : wholesale lingerie market mein aisi quality lana jisme koi samjhauta na ho. 
                         </p>
-                        <p>
-                            We believe that true comfort is engineered. That's why every piece of fabric is carefully deconstructed in our design phase, and every finished garment is rigorously inspected before it leaves our facility.
+                        <p>Hum maante hain ki asli comfort design karna padta hai. <br>Isiliye humare design phase mein har fabric ki baariqiyon ko khol kar samjha jata hai, aur factory se nikalne se pehle har taiyaar kapde ki achhe se checking hoti hai.
                         </p>
-                        <p>
-                            For over three decades, we haven't just been manufacturing apparel; we've been crafting confidence. Our commitment to B2B excellence means your retail business receives products that guarantee customer satisfaction and repeat business.
+                        <p>Pichle 30 saalo se bhi zyada waqt se, hum sirf kapde nahi bana rahe; hum confidence tayyaar kar rahe hain. B2B excellence ki taraf humari lagan ka seedha sa matlab hai ki aapke retail business ko aise products milein jo customer satisfaction aur repeat... ki pakki guarantee dein.
                         </p>
                     </div>
 
@@ -225,13 +193,15 @@
                 </div>
 
                 <div class="relative h-[600px] w-full rounded-3xl overflow-hidden bg-zinc-950 border border-zinc-800 group">
-                    <img src="store front.png" alt="Deepa Hosiery Storefront" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    <div class="group cursor-pointer w-full max-w-lg flex flex-col items-center text-center" onclick="navigateTo('partner with us')">
+                    <img src="storefront.png" alt="Deepa Hosiery Storefront" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div class="absolute bottom-8 left-8 right-8">
                         <div class="backdrop-blur-md bg-black/40 border border-zinc-700/50 p-6 rounded-2xl">
                              <h3 class="text-2xl font-medium text-white mb-1">Our Original Storefront</h3>
                              <p class="text-teal-400 font-medium tracking-wide">Bhopal, Madhya Pradesh</p>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -245,7 +215,22 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <img src="why us.jpg" style="display: block; margin: 0 auto; border-radius: 1.5rem;" alt="why us">
+                
+                <!-- Replaced Image with Video -->
+                                
+                     <div class="w-full max-w-md mx-auto aspect-[9/16] bg-black border border-zinc-800 rounded-3xl overflow-hidden relative shadow-2xl flex items-center justify-center">
+                                      <a href="https://wa.me/919165004768?text=Hello%20Deepa%20Hosiery,%20I%20am%20interested%20in%20partnering%20for%20wholesale%20and%20would%20like%20to%20see%20your%20catalog." 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full sm:w-auto px-8 py-4 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-medium text-lg transition-all shadow-[0_0_20px_rgba(20,184,166,0.2)] hover:shadow-[0_0_30px_rgba(20,184,166,0.4)] flex items-center justify-center gap-3">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        Chat on WhatsApp
+                      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-contain">
+                        <source src="whyus.mp4" type="video/mp4"/>
+                    </video>
+                      </a>
+                </div>
+
                 <!-- Benefits Column -->
                 <div class="space-y-8">
                     <h3 class="text-2xl font-semibold text-white mb-6">The B2B Advantage</h3>
@@ -551,4 +536,4 @@
         }
     </script>
 </body>
-</html>
+    </html>
